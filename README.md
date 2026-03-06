@@ -1,1 +1,4 @@
 # insurance-fraud-detection
+Insurance Fraud Detection System is a machine learning–based application that helps insurance companies identify fraudulent claims. In this project, claim details such as claim amount, claim frequency, and customer information are analyzed by a trained machine learning model. The model studies patterns from past insurance data and predicts whether a new claim is genuine or fraudulent, helping companies reduce financial losses and improve claim verification.
+
+The project is developed using Python for programming, Scikit-learn for building the machine learning model, Pandas and NumPy for data processing, and Flask for creating the web application. The user enters claim details on a simple HTML webpage, and the Flask server sends this data to the trained model. The model then returns the prediction, which is displayed on the website as either a fraudulent claim or a genuine claim.
