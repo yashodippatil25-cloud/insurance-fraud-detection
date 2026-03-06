@@ -4,7 +4,8 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = joblib.load("fraud_model.pkl")
+import os
+model = joblib.load(os.path.join(os.path.dirname(__file__), "fraud_model.pkl"))
 
 @app.route('/')
 def home():
@@ -29,4 +30,5 @@ def predict():
     return render_template("result.html", prediction=result)
 
 if __name__ == "__main__":
+
     app.run(debug=True)
